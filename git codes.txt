@@ -1,0 +1,47 @@
+login in GitHub:
+git config --global user.name"user name"
+git config --global user.email"user name"
+
+
+ضروری نیست ولی انجام بشه بهتره:
+git config --global core.autoclrf true
+git config --global core.safecrlf warn
+
+
+conect to GitHub درصورت داشتن فایل:
+git remote add origin (https://github.com/alikhandani-GitHub/keywords.git این همون ادرس ریپازیتوری هست)
+git branch -M main
+git push -u origin main
+
+
+conect to GitHub درصورت نداشتن فایل:
+ساخت پوشه 
+git init
+git remote add origin (https://github.com/alikhandani-GitHub/keywords.git این همون ادرس ریپازیتوری هست)
+git branch -M main
+git push -u origin main
+
+
+برای اینکه تغییراتی را در فایل ایجاد کردیم و روی گیت هاب قرار بدیم:
+(git add .) or (git add --all) (همه فایل ها)
+git commit -m "توضیح مورد نظر"
+(git push) or (git push -u origin main) or (git push main) ---> if branch is main.
+
+
+برای دیدن وضعیت:
+git status
+
+
+برای تغییر branch:
+git checkout (نام branch)
+
+
+اعمال تغییرات به حالت اولیه:
+git checkout (پسوند فایل.اسم فایل)
+
+
+
+How to Fix error: failed to push some refs to Error in Git Using git pull:
+
+git pull --rebase origin main
+git push -u origin main 
